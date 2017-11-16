@@ -5,14 +5,13 @@ import static master.Conexao.*;
 
 public class Metodos {
 
-    public static void listEvents(){
+    public static void listEvents() {
         System.out.printf("ID | Titulo | Custo | Data de criação | Data de modificação | " +
-                "Data de execução | Status");
-        System.out.println(getmaxLineSQL());
-       // for (int i  = 0; i<(getmaxLineSQL()+1); i++){
-            //getLinesSQL(1);
-        // fim do for
-    }
+                "Data de execução | Status\n");
+        //System.out.println(getmaxLineSQL());
+        for (int i = 1; i <= getmaxLineSQL(); i++) {
+            getLinesSQL(i);
 
-
+        }// fim do for
+    }//fim do metodo
 }

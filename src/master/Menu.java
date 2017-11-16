@@ -2,6 +2,7 @@ package master;
 import java.util.Scanner;
 
 import static master.Metodos.listEvents;
+import static master.Conexao.*;
 
 public class Menu {
     private static Scanner ler = new Scanner(System.in);
@@ -18,7 +19,7 @@ public class Menu {
         switch (choice){
             case 1 : listEvents();
                 break;
-            case 2 :
+            case 2 : inserirEvento();
                 break;
             case 3 :
                 break;
